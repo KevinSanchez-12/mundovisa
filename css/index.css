@@ -1,0 +1,494 @@
+.banner{
+    background-image: url(../img/banner.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+}
+.banner div{
+    width: 96%;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+    padding-right: 600px;
+}
+.banner div h1{
+    color: white;
+    margin-bottom: 50px;
+    font-size: 3rem;
+    animation-duration: 1s;
+    animation-name: slideinb;
+}
+@keyframes slideinb{
+    from {
+        transform: scale(0);
+    }
+}
+.banner div a{
+    color: white;
+    background-color:var(--colora);
+    padding: 10px;
+    border-radius: 20px;
+    transition: .5s;
+}
+.banner div a:hover{
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.oferta{
+    width: 100%;
+    height: auto;
+    background-color: #dfe6e9;
+}
+.oferta .contenedor{
+    width: 96%;
+    height: auto;
+    max-width: 1500px;
+    margin: auto;
+    display: grid;
+}
+.oferta .contenedor .seccion-a{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    transition: .5s;
+}
+.oferta .contenedor .seccion-a:hover .circle{
+    transform: scale(1.1);
+    transition: .5s;
+}
+.oferta .contenedor .seccion-a h1{
+    font-size: 2rem;
+    color: #000;
+}
+.oferta .contenedor .seccion-a .circle{
+   background-image: url(../img/0020.png);
+    height: 170px;
+    width: 170px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    transition: .5s;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+}
+.oferta .contenedor .seccion-a .circle h1{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    font-family: 'Russo One', sans-serif;
+}
+.oferta .contenedor .seccion-b{
+    background-color: var(--colora);
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    height: 80px;
+    margin-bottom: 30px;
+    border-radius: 20px;
+}
+.oferta .contenedor .seccion-b a{
+    color: white;
+    background-color: #8a8f91;
+    padding: 10px 30px;
+    border-radius: 40px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: .5s;
+}
+.oferta .contenedor .seccion-b a:hover{
+    transform: translateY(-5px);
+    transition: .5s;
+}
+.oferta .contenedor .seccion-b a:nth-child(2){
+    background-color: #40BF50;
+    color: white;
+}
+.nosotros{
+    width: 96%;
+    height: auto;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nosotros .seccion-a{
+    width: 40%;
+    height: auto;
+    align-items: end;
+    justify-content: end;
+    display: flex;
+}
+.nosotros:hover .seccion-a .line .img{
+    background-image: url(../img/0002.jpg);
+    transition: .5s;
+    transform: rotate(45deg);
+}
+.nosotros .seccion-a .line{
+    border-radius: 50%;
+    height: 430px;
+    width: 430px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border: 5px solid var(--colora);
+}
+.nosotros .seccion-a .line .img{
+    background-image: url(../img/0001.jpg);
+    height: 400px;
+    width: 400px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    margin: auto;
+    transition: .5s;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        transform: rotate(90deg);
+    }
+}
+.nosotros .seccion-b{
+    width: 60%;
+    height: auto;
+}
+.nosotros .seccion-b h1{
+    line-height: 40px;
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-align: justify;
+}
+.skill{
+    width: 96%;
+    max-width: 1500px;
+    height: auto;
+    margin: auto;
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.skill .seccion-a{
+    width: 50%;
+    height: auto;
+}
+.skill .seccion-a h1{
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+.skill .seccion-a ul li{
+    list-style: none;
+    line-height: 30px;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+.skill .seccion-a ul li img{
+    height: 10px;
+}
+.skill .seccion-a ul li span{
+    background-color: var(--colorb);
+    border-radius: 50%;
+    color: white;
+    font-size: .8rem;
+    padding: 2px;
+    margin-right: 5px;
+}
+.skill .seccion-a ul a{
+    color: white;
+    background-color: var(--colora);
+    border-radius: 20px;
+    transition: .5s;
+    padding: 10px 20px;
+}
+.skill .seccion-a ul a:hover{
+    letter-spacing: 1px;
+    transition: .5s;
+}
+.skill .seccion-b{
+    width: 50%;
+    height: auto;
+    align-items: center;
+    justify-content: flex-end;
+    display: flex;
+}
+.skill .seccion-b img{
+    height: 100%;
+}
+.part{
+    width: 100%;
+    height: auto;
+    background-color: var(--colora);
+    margin-bottom: 50px;
+}
+.part .contenedor{
+    width: 96%;
+    height: 350px;
+    max-width: 1500px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.part .contenedor .seccion-a{
+    width: 50%;
+    height: 100%;
+    padding: 30px;
+    padding-left: 0;
+    display: grid;
+}
+.part .contenedor .seccion-a h1{
+    font-size: 2rem;
+    color: white;
+}
+.part .contenedor .seccion-a .linea{
+    width: 100%;
+    background-color: white;
+    height: 4px;
+    border-radius: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.part .contenedor .seccion-a h3{
+    margin-bottom: 30px;
+    color: white;
+    font-weight: 400;
+}
+.part .contenedor .seccion-a div a{
+    color: white;
+    background-color: var(--colorb);
+    border-radius: 20px;
+    padding: 10px 20px;
+    width: 230px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    transition: .5s;
+}
+.part .contenedor .seccion-a div a:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+.part .contenedor .seccion-b{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url();
+}
+.part-b .contenedor .seccion-b{
+    background-image: url(../img/0004.jpg);
+}
+.part .contenedor .americana{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/0012.jpg);
+}
+.part .contenedor .menores13{
+    width: 50%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/0015.jpg);
+}
+.part .contenedor .mayores14{
+    background-image: url(../img/0016.jpg);
+}
+.part-b .contenedor .seccion-a{
+    padding-left: 30px;
+}
+.part-c .contenedor .seccion-b{
+    background-image: url(../img/0005.jpg);
+}
+.part-b .contenedor .canada{
+    background-image: url(../img/0017.jpg);
+}
+.part-c .contenedor .canadab{
+    background-image: url(../img/0018.jpg);
+}
+.title-ubicanos{
+    width: 96%;
+    margin: auto;
+    max-width: 1500px;
+    margin-bottom: 50px;
+}
+.title-ubicanos h1{
+    font-size: 2rem;
+}
+.map{
+    width: 50%;
+    max-width: 500px;
+    min-width: 290px;
+    height: 400px;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border: none;
+}
+@media (max-width:1270px){
+    .oferta .contenedor .seccion-a{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .oferta .contenedor .seccion-a h1{
+        text-align: center;
+    }
+    .oferta .contenedor .seccion-a .circle{
+        margin:auto;
+        margin-top: 40px;
+
+    }
+}
+@media (max-width:1200px){
+    .nosotros .seccion-a{
+        width: 35%;
+    }
+    .nosotros .seccion-b{
+        width: 65%;
+    }
+    .nosotros .seccion-a .line{
+        height: 330px;
+        width: 330px;
+    }
+    .nosotros .seccion-a .line .img{
+        height: 300px;
+        width: 300px;
+    }
+}
+@media (max-width:1000px){
+    .banner div{
+        padding-right: 300px;
+    }
+}
+@media (max-width:1050px){
+    .nosotros .seccion-a .line{
+        height: 290px;
+        width: 290px;
+    }
+    .nosotros .seccion-a .line .img{
+        height: 260px;
+        width: 260px;
+    }
+    .skill{
+        display: grid;
+    }
+    .skill .seccion-a{
+        width: 100%;
+    }
+    .skill .seccion-b{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .skill .seccion-b img{
+        width: 290px;
+        margin: auto;
+    }
+}
+@media (max-width:980px){
+    .part .contenedor{
+        height: auto;
+    }
+    .part .contenedor .seccion-b{
+        display: none;
+    }
+    .part .contenedor .seccion-a{
+        width: 100%;
+    }
+    .part-b .contenedor .seccion-a{
+        padding-left: 0px;
+    }
+}
+@media (max-width:900px){
+    .nosotros{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+    }
+    .nosotros .seccion-a{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .nosotros .seccion-b{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .nosotros .seccion-b h1{
+        text-align: center;
+    }
+}
+@media (max-width:700px){
+    .banner div{
+        padding-right: 100px;
+    }
+}
+@media (max-width:500px){
+    .banner div{
+        padding-right: 0px;
+    } 
+    .banner div h1{
+        margin-bottom: 30px;
+        font-size: 2rem;
+    }
+}
+@media (max-width:400px){
+    .oferta .contenedor .seccion-b{
+        display: grid;
+        background-color: transparent;
+    }
+    .oferta .contenedor .seccion-b a{
+        margin-bottom: 10px;
+    }
+    .skill .seccion-a h1{
+        text-align: center;
+    }
+    .nosotros .seccion-b h1{
+        font-size: 1.5rem;
+    }
+    .part .contenedor .seccion-a{
+        padding-right: 0;
+    }
+    .part .contenedor .seccion-a h1{
+        text-align: center;
+    }
+    .part .contenedor .seccion-a h3{
+        text-align: center;
+    }
+    .part .contenedor .seccion-a div{
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        margin: auto;
+    }
+}
+
+
+
